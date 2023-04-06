@@ -7,9 +7,12 @@ distributes an archive to the web servers
 from fabric.api import *
 from datetime import datetime
 from os.path import exists, isdir
+
+
 env.hosts = ['54.236.26.66', '54.159.23.136']
 env.user = "ubuntu"
 env.key_filename = '~/.ssh/authorized_keys'
+
 
 def do_pack():
     """generates a tgz archive"""
