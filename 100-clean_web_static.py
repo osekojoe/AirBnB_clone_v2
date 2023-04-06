@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 1. Generates a .tgz archive from the contents of the web_static folder
 2. Deploy archive to web server
 3. Full deploy
@@ -28,15 +28,16 @@ def do_pack():
     except Exception:
         return None
 
+
 def do_deploy(archive_path):
     """Deploy archive to web server"""
     if exists(archive_path) is False:
         return False
     try:
-        archive_path_split = archive_path.replace('/', ' ').replace('.', ' ').split()
-        archive_parent_dir = archive_path_split[0]
-        archivename_no_gz = archive_path_split[1]
-        archivename_gz = archive_path_split[1] + '.' + archive_path_split[2]
+        path_split = archive_path.replace('/', ' ').replace('.', ' ').split()
+        archive_parent_dir = path_split[0]
+        archivename_no_gz = path_split[1]
+        archivename_gz = path_split[1] + '.' + path_split[2]
         dest_folder = '/data/web_static/releases/{}/'.format(archivename_no_gz)
         put(archive_path, '/tmp/')
         run('mkdir -p {}'.format(dest_folder))
@@ -51,12 +52,14 @@ def do_deploy(archive_path):
     except Exception:
         return False
 
+
 def deploy():
     """Full deploy web content"""
     archive_path = do_pack()
     if archive is None:
         return False
     return do_deploy(archive_path)
+
 
 def do_clean(number=0):
     """deletes out-of-date archives"""
