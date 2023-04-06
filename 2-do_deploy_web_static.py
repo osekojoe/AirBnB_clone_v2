@@ -4,11 +4,12 @@ Fabric script based on 1-pack_web_static.py that creates and
 distributes an archive to the web servers
 """
 
-from fabric.api import env, local, put, run
+from fabric.api import *
 from datetime import datetime
 from os.path import exists, isdir
 env.hosts = ['54.236.26.66', '54.159.23.136']
-
+env.user = "ubuntu"
+env.key_filename = '~/.ssh/authorized_keys'
 
 def do_pack():
     """generates a tgz archive"""
