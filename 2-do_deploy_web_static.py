@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 1. Generates a .tgz archive from the contents of the web_static folder
 2. Deploy archive to web server
 """
@@ -29,5 +29,5 @@ def do_deploy(archive_path):
         run('rm -rf /data/web_static/current')
         run('ln -s {}{}/ /data/web_static/current'.format(path, no_ext))
         return True
-    except:
+    except Exception:
         return False
