@@ -1,0 +1,13 @@
+- 0x04. AirBnB clone - Web framework
+- []()<br>
+- [What is a Web Framework?](https://intelegain-technologies.medium.com/what-are-web-frameworks-and-why-you-need-them-c4e8806bd0fb)<br>
+- [A Minimal Application](https://flask.palletsprojects.com/en/1.0.x/quickstart/#a-minimal-application)<br>
+- [Routing](https://flask.palletsprojects.com/en/1.0.x/quickstart/#routing)<br>
+- [Rendering Templates](https://flask.palletsprojects.com/en/1.0.x/quickstart/#rendering-templates)<br>
+- [Synopsis](https://jinja.palletsprojects.com/en/2.9.x/templates/#synopsis)<br>
+- [Variables](https://jinja.palletsprojects.com/en/2.9.x/templates/#variables)<br>
+- [Comments](https://jinja.palletsprojects.com/en/2.9.x/templates/#comments)<br>
+- [Whitespace Control](https://jinja.palletsprojects.com/en/2.9.x/templates/#whitespace-control)<br>
+- [List of Control Structures](https://jinja.palletsprojects.com/en/2.9.x/templates/#list-of-control-structures)<br>
+- [Flask](https://palletsprojects.com/p/flask/)<br>
+- [Jinja](https://jinja.palletsprojects.com/en/2.9.x/templates/)
