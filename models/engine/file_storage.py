@@ -63,3 +63,7 @@ class FileStorage:
             del self.__objects["{}.{}".format(type(obj).__name__, obj.id)]
         except KeyError:
             pass
+
+    def close(self):
+        """reload method"""
+        self.reload()
