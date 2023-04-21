@@ -32,7 +32,7 @@ def hbnb():
 @app.route('/c/<text>', strict_slashes=False)
 def cisfun(text):
     """display c plus custom text"""
-    return 'c ' + text.replace('_', ' ')
+    return 'C ' + text.replace('_', ' ')
 
 
 @app.route('/python', strict_slashes=False)
