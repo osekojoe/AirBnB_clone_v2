@@ -29,7 +29,7 @@ def hbnb():
 @app.route('/c/<text>', strict_slashes=False)
 def cisfun():
     """display c plus custom text"""
-    return 'c ' + text.replace('_', ' ')
+    return 'C ' + text.replace('_', ' ')
 
 
 if __name__ == '__main__':
